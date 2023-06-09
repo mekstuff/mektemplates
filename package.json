@@ -1,0 +1,8 @@
+{
+  "name": "mektemplates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mekstuff/mektemplates.git",
+  "author": "mekstuff <mekstuff@mekstuff.com> (https://github.com/mekstuff)",
+  "license": "MIT"
+}
