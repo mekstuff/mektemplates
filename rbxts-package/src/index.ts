@@ -1,5 +1,3 @@
-class Package {
-
+export function makeHello(name: string) {
+	return `Hello from ${name}!`;
 }
-
-export default Package;

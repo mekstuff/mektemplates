@@ -1,29 +1,39 @@
 {
-  "name": "___",
-  "version": "1.0.0",
+  "name": "@mekstuffphe/___",
+  "version": "0.1.0",
+  "description": "",
   "main": "out/init.lua",
-  "author": "___ <___@gmail.com> (https://github.com/___)",
-  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://npm.pkg.github.com"
+  },
+  "files": [
+    "out"
+  ],
   "scripts": {
     "build": "rbxtsc",
-    "watch": "rbxtsc -w --type=game -p test -i test/include",
+    "watch:dev": "rbxtsc -w",
+    "watch:test": "rbxtsc -w --type=game -p test -i test/include",
+    "watch:lpm": "lpm watch out --exec=\"lpm publish --noScripts --packer=yarn",
+    "serve": "rojo serve test",
+    "release": "standard-version",
+    "publish:local": "lpm publish",
+    "publish:local-noScripts": "lpm publish --noScripts",
+    "publish:registry": "lpm prepare --prod && npm publish && lpm prepare --dev",
+    "publish:registry-noScripts": "lpm prepare --prod && npm publish --ignore-scripts && lpm prepare --dev",
+    "publish:release": "yarn build && yarn release && yarn publish:local-noScripts && yarn publish:registry-noScripts",
     "prepublishOnly": "yarn run build",
-    "serve": "rojo serve test"
+    "lpm:prepublishOnly": "yarn run prepublishOnly"
   },
+  "keywords": [],
+  "author": "Mekstuff <contact@mekstuff.com> (https://github.com/mekstuff)",
+  "license": "MIT",
   "types": "out/index.d.ts",
-  "files": [
-    "out",
-    "!**/*.tsbuildinfo"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
-    "@rbxts/compiler-types": "^2.1.0-types.1",
-    "@rbxts/types": "^1.0.686",
-    "@typescript-eslint/eslint-plugin": "^5.59.7",
-    "@typescript-eslint/parser": "^5.59.7",
-    "eslint": "^8.41.0",
+    "@rbxts/compiler-types": "2.1.0-types.1",
+    "@rbxts/types": "^1.0.688",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-roblox-ts": "^0.0.35",

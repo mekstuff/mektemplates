@@ -16,10 +16,12 @@
     "target": "ESNext",
     "typeRoots": [
       "../node_modules/@rbxts",
-      // "../node_modules/@scope",
+      "../node_modules/@mekstuffphe"
     ],
     "paths": {
-      // "@scope/package": ["../../src"]
+      "@mekstuffphe/core": [
+        "../../src"
+      ]
     },
     "rootDirs": [
       "./src",

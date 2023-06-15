@@ -1,0 +1,17 @@
+{
+  "name": "@___/___",
+  "version": "1.0.0",
+  "author": "___ <___@___.com> (https://github.com/___)",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mektemplates": "build/index.js"
+  },
+  "dependencies": {
+    "commander": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
+  }
+}

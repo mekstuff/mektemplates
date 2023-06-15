@@ -1,5 +1,5 @@
 {
-  "name": "phe-collector-test",
+  "name": "phe-fetch-test",
   "globIgnorePaths": [
     "**/package.json",
     "**/tsconfig.json"
@@ -15,12 +15,9 @@
           "@rbxts": {
             "$path": "../node_modules/@rbxts"
           }
-          // "@scope": {
-          //   "$path": "../node_modules/@scope"
-          // }
         }
       },
-      "collector": {
+      "fetch": {
         "$path": "out/src"
       },
       "shared": {

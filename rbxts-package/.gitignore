@@ -2,4 +2,3 @@ node_modules/
 out/
 include/
 *.tsbuildinfo
-yarn-error.log
