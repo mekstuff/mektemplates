@@ -1,1 +1,1 @@
-Templates used to developer. Used by mektemplatescli
+Templates used locally by mektemplates cli.
