@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "",
   "main": "out/init.lua",
-  "publishConfig": {
-    "registry": "http://npm.pkg.github.com"
-  },
   "files": [
     "out"
   ],
@@ -13,19 +10,10 @@
     "build": "rbxtsc",
     "watch:dev": "rbxtsc -w",
     "watch:test": "rbxtsc -w --type=game -p test -i test/include",
-    "watch:lpm": "lpm watch out --exec=\"lpm publish --noScripts --packer=yarn",
-    "serve": "rojo serve test",
-    "release": "standard-version",
-    "publish:local": "lpm publish",
-    "publish:local-noScripts": "lpm publish --noScripts",
-    "publish:registry": "lpm prepare --prod && npm publish && lpm prepare --dev",
-    "publish:registry-noScripts": "lpm prepare --prod && npm publish --ignore-scripts && lpm prepare --dev",
-    "publish:release": "yarn build && yarn release && yarn publish:local-noScripts && yarn publish:registry-noScripts",
-    "prepublishOnly": "yarn run build",
-    "lpm:prepublishOnly": "yarn run prepublishOnly"
+    "serve": "rojo serve test"
   },
   "keywords": [],
-  "author": "Mekstuff <contact@mekstuff.com> (https://github.com/mekstuff)",
+  "author": "___ <contact@___.com> (https://github.com/___)",
   "license": "MIT",
   "types": "out/index.d.ts",
   "devDependencies": {
